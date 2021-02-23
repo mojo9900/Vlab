@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main Page - Wind Energy Virtual Lab</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Overpass:wght@600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Catamaran', sans-serif;
+    }
+
+    html {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)), url(http://www.evwind.es/wp-content/uploads/2012/07/repower-wind-turbines.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    header {
+      height: 17vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .nav-bar {
+      display: flex;
+      padding: 20px 90px;
+    }
+
+    .navlogo {
+      flex: 20%;
+    }
+
+    .navlogo img {
+      width: 120px;
+      padding: 2px;
+      background-color: rgba(0, 139, 139, 0.15);
+    }
+
+    .navmenu {
+      flex: 80%;
+      display: relative;
+    }
+
+    .navmenu ul {
+      display: absolute;
+      float: right;
+    }
+
+    .navmenu ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 20px 28px;
+    }
+
+    .navmenu ul a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px
+    }
+
+    .navmenu ul li::after {
+      content: '';
+      width: 0%;
+      height: 1px;
+      background: DarkCyan;
+      display: block;
+      margin: auto;
+      transition: .1s;
+    }
+
+    .navmenu ul li:hover::after {
+      width: 100%;
+    }
+
+    .LandingIntro {
+      display: flex;
+      width: 85%;
+      margin: auto;
+      min-height: 70vh;
+      align-items: center;
+    }
+
+    .Introduction {
+      flex: 1;
+    }
+
+    .introtext h1 {
+      font-family: 'Overpass', sans-serif;
+      color: #fff;
+      font-size: 4.5em;
+      font-weight: 600;
+    }
+
+    .introtext p {
+      background: linear-gradient(to right, darkcyan, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.6em;
+      width: 40%;
+    }
+
+    .cta {
+      padding: 50px 0px 0px 0px;
+    }
+
+    .button {
+      font-size: 1em;
+      color: white;
+      background: DarkCyan;
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .button a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="navlogo">
+        <a href="LandingPage.html"><img  src="https://www.uowmkdu.edu.my/wp-content/themes/kdu/img/UOWMKDU-logb.png.webp"></a>
+      </div>
+      <div class="navmenu">
+        <ul>
+          <li><a href="Intro.html">Introduction</a></li>
+          <li><a href="Theory.html">Theory</a></li>
+          <li><a href="Experiment.html">Experiments</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="LandingIntro">
+      <div class="Introduction">
+        <div class="introtext">
+          <h1>Wind Turbine VL</h1>
+          <p>Virtual Lab designed for undergraduate students to
+            strengthen their fundamentals on wind energy.
+          </p>
+        </div>
+        <div class="cta">
+          <button class="button"><a href="Experiment.html">Get Started</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

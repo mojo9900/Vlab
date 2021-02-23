@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Introduction</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Overpass:wght@600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Catamaran', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    header {
+      height: 10vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .nav-bar {
+      display: flex;
+      padding: 2px 90px;
+      background-color: darkgrey;
+    }
+
+    .navlogo {
+      flex: 25%;
+    }
+
+    .navlogo img {
+      width: 80px;
+      padding: 9px;
+    }
+
+    .navmenu {
+      flex: 80%;
+      display: relative;
+    }
+
+    .navmenu ul {
+      display: absolute;
+      float: right;
+    }
+
+    .navmenu ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 24px 28px;
+    }
+
+    .navmenu ul a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px
+    }
+
+    .navmenu ul li::after {
+      content: '';
+      width: 0%;
+      height: 1px;
+      background: DarkCyan;
+      display: block;
+      margin: auto;
+      transition: .1s;
+    }
+
+    .navmenu ul li:hover::after {
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      width: 50%;
+      margin: auto;
+      min-height: 70vh;
+      align-items: center;
+    }
+
+    .text h1 {
+      font-size: 4.5em;
+      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      padding: 10px 0px;
+    }
+
+    .text h2 {
+      font-family: 'Overpass', sans-serif;
+      font-size: 2em;
+      padding: 10px 0px;
+    }
+
+    .text h3 {
+      font-family: 'Overpass', sans-serif;
+      font-size: 1.4em;
+    }
+
+    .text p {
+      text-align: justify;
+      padding: 8px 0px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="navlogo">
+        <a href="LandingPage.html"><img src="https://www.uowmkdu.edu.my/wp-content/themes/kdu/img/UOWMKDU-logb.png.webp"></a>
+      </div>
+      <div class="navmenu">
+        <ul>
+          <li><a href="Intro.html">Introduction</a></li>
+          <li><a href="Theory.html">Theory</a></li>
+          <li><a href="Experiment.html">Experiments</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="text">
+        <h1>Introduction</h1>
+        <p>Non-renewable resources such as minerals and ores, fossil fuels,
+          coal, petroleum, and natural gas are being depleted at an alarming
+          rate to sustain the energy usage worldwide. This rapid increase in
+          the rate of depletion could be correlated with the excessive
+          utilization of these resources as the world is seeing one of the
+          biggest technological breakthroughs in so many industries since
+          the dawn of time and there are no signs of it slowing down.
+        </p>
+        <p>
+          Without taking any steps to slow down the ecological footprint,
+          the earth would soon become inhabitable by humans as the
+          biocapacity around the world reduces to nothing. With energy
+          generation being one of the biggest contributors to the ecological
+          footprint, it is only logical for engineers to develop renewable
+          energy generation systems to replace non-renewable resources as to
+          cut down the ecological footprint in the long term.
+        </p>
+        <p>
+          With more and more engineering students pursuing the direction of
+          renewable energy, it is extremely important for these students to
+          have an interactive lab for them to interact with and further
+          their understanding. A web-based virtual lab would be ideal for
+          this purpose as the cost of development could be kept at a lower
+          budget, implementing functions that are relevant to the outcome of
+          a particular module.
+        </p>
+        <p>
+          The motivation of this project is originated from the Capstone
+          Module (EBGE 3123) and is jointly developed by 6 students of UOW
+          Malaysia KDU pursuing different engineering majors. See About Us
+          for more information about us!
+        </p>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
